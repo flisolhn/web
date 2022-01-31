@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.container {  
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-wrapper1{
+  background-image: url('../../images/2022.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.year {
+  font-size: 65px;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.countdown {
+  /* display: flex; */
+  display: none;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+@media (max-width: 500px) {
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+}
